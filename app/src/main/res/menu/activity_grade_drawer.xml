@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/grade_calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="Grade Calculator"/>
+        <item
+            android:id="@+id/upcoming_assignments"
+            android:icon="@drawable/calendar_icon"
+            android:title="Upcoming Assignments"/>
+        <item
+            android:id="@+id/change_semester"
+            android:icon="@drawable/clock_icon"
+            android:title="Change Semesters"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Help">
+            <menu>
+                <item
+                    android:id="@+id/contact_dev"
+                    android:icon="@drawable/ic_action_chat_light"
+                    android:title="Contact a Dev"/>
+                <item
+                    android:id="@+id/report_bug"
+                    android:icon="@drawable/bug_icon"
+                    android:title="Report a bug"/>
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="More">
+            <menu>
+                <item
+                    android:id="@+id/newsletter_signup"
+                    android:icon="@drawable/newsletter_icon"
+                    android:title="Sign up for our Newsletter"/>
+
+                <item
+                    android:id="@+id/facebook"
+                    android:icon="@drawable/facebook_grey"
+                    android:title="Like our Facebook Page"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

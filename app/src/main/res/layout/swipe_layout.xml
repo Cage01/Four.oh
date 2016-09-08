@@ -1,0 +1,68 @@
+<com.daimajia.swipe.SwipeLayout android:id="@+id/swipe"
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="#E75043"
+        android:orientation="vertical"
+        android:tag="Bottom2">
+
+        <TextView
+            android:id="@+id/trash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper2"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:tag="Bottom2">
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/floatingMenu"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

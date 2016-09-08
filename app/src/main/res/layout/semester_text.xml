@@ -1,0 +1,101 @@
+<com.daimajia.swipe.SwipeLayout android:id="@+id/swipe_semester"
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper_semester"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:background="#E75043"
+        android:orientation="vertical"
+        android:tag="Bottom2">
+
+        <TextView
+            android:id="@+id/trash_semester"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper_semester2"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:tag="Bottom2">
+
+        <TextView
+            android:id="@+id/semester_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="Edit"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/semester_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/semester_list_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/semester_list_name"
+            android:paddingTop="30dp"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/semester_list_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/semester_list_name"
+            android:layout_toEndOf="@+id/semester_list_name"
+            android:layout_toRightOf="@+id/semester_list_name"
+            android:paddingLeft="70dp"
+            android:paddingTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

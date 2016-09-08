@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099cc</color>
+    <color name="offPrimary">#007299</color>
+
+    <color name="colorPrimaryDark">#1d5879</color>
+    <color name="colorAccent">#25ded7</color>
+    <color name="white">#ffffff</color>
+    <color name="hint_white">#86ffffff</color>
+    <color name="notification">#2b2b2b</color>
+    <color name="darkBackground">#303030</color>
+    <color name="floatingMenu">#353535</color>
+    <color name="clicked">#555555</color>
+    <color name="swipeDelete">#EF6C00</color>
+    <color name="swipeDelete2">#C62828</color>
+    <color name="swipeDelete3">#D32F2F</color>
+    <color name="swipeDelete4">#E53935</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

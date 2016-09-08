@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CircularFloatingActionMenu/CircularFloatingActionMenu.iml" filepath="$PROJECT_DIR$/CircularFloatingActionMenu/CircularFloatingActionMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClansFloating/ClansFloating.iml" filepath="$PROJECT_DIR$/ClansFloating/ClansFloating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GradeCalculator.iml" filepath="$PROJECT_DIR$/GradeCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialCalendarView/MaterialCalendarView.iml" filepath="$PROJECT_DIR$/MaterialCalendarView/MaterialCalendarView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeDelete/SwipeDelete.iml" filepath="$PROJECT_DIR$/SwipeDelete/SwipeDelete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

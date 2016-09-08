@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/work_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"/>
+
+    <EditText
+        android:id="@+id/points_earned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Points Earned"/>
+
+    <EditText
+        android:id="@+id/max_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Points Possible"/>
+
+    <Spinner
+        android:id="@+id/weight_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

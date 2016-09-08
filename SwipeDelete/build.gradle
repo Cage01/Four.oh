@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+}
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.01"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+}
+
+dependencies {
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    compile 'com.android.support:support-v4:22.1.1'
+}
+//apply from: './gradle-mvn-push.gradle'
+
+//apply plugin: 'android-maven'
+
+// build a jar with source files
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+artifacts {
+    archives sourcesJar
+}

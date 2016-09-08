@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#0099cc"
+             tools:context="zerotek.gradecalculator.AddSemester">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/semester_next_button"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_semester_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:text="text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <!-- (Ron)for some reason there was a 10dp margin I removed it -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginRight="0dp"
+        android:fitsSystemWindows="true"
+        android:paddingRight="10dp">
+
+
+        <EditText
+            android:id="@+id/start_date_edit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/semester_name"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/semester_name"
+            android:layout_below="@+id/semester_end_date_text"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:paddingTop="0dp"
+            android:textColor="@color/white"/>
+
+        <!-- (Ron) the dates are no longer cut off, I changed the bottom padding to 10dp -->
+        <TextView
+            android:id="@+id/semester_start_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/start_date_edit"
+            android:layout_alignStart="@+id/start_date_edit"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:paddingBottom="10dp"
+            android:text="Start Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/semester_name"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:hint="Semester Name"
+            android:paddingTop="140dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#036889"/>
+
+        <EditText
+            android:id="@+id/end_date_edit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/start_date_edit"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/start_date_edit"
+            android:layout_toRightOf="@+id/start_date_edit"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:paddingTop="0dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/semester_end_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/end_date_edit"
+            android:layout_alignStart="@+id/end_date_edit"
+            android:layout_alignTop="@+id/add_semester_info"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:text="End Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/add_semester_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/semester_start_date_text"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="80dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
